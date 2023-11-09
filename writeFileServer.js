@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
 		);
 		res.write('</html>');
 		res.end();
-
+		
 	}  else if (url === '/contact' && method==='POST') {
 		//  This will create a file 'contact.txt' and put 'this is DUMMY Contact' text in it
         fs.writeFileSync('contact.txt', 'this is DUMMY Contact')
